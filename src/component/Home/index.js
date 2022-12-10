@@ -4,6 +4,7 @@ import React from 'react'
 import NavBar from '../navBar'
 import Boxes from './boxes'
 import Buttons from './buttons'
+import Dots from './dots'
 
 function Home() {
     const HomePageContainer = styled(Box)(({theme})=>({
@@ -21,6 +22,7 @@ function Home() {
             <NavBar/>
             <Boxes/>
             <Buttons/>
+            <Dots componentNumber={0} />
         </HomePageContainer>
     )
 }

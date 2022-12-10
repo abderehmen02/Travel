@@ -17,18 +17,17 @@ color : theme.palette.white.main ,
  alignItems : 'center' ,
 width : '50%',
 gap : theme.spacing(3) , 
- border :'2px solid red' ,
  flex : 1 , 
  borderRadius : theme.spacing(1) ,
  boxShadow : `2px 2px 4px ${theme.palette.pink.main}` ,
- padding : theme.spacing(1) ,
+ padding : theme.spacing(5) ,
  backgroundColor : theme.palette.pink.main
     }))
     return (
             <Container >
             <Box style={{ gap  : 0 , display  : 'flex' , flexDirection : 'column' ,  }} >
-<StyledTitle variant='h3'  > Explore The World</StyledTitle>
-<StyledTitle variant='h4' > Sky is not the limit </StyledTitle>
+<StyledTitle variant='h4'  > Explore The World</StyledTitle>
+<StyledTitle variant='h5' > Sky is not the limit </StyledTitle>
             </Box>
             <StyledText>
             Visite and explore new cities arround 

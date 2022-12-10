@@ -9,7 +9,7 @@ color : theme.palette.white.main ,
     }))
 
     const StyledText = styled(Typography)(({theme})=>({
-        color : theme.palette.white.light , 
+        color : theme.palette.white.main , 
         textAlign : 'center'
     }))
 
@@ -21,13 +21,13 @@ color : theme.palette.white.main ,
 height : '100%',
 
 gap : theme.spacing(3) , 
- border :'2px solid green' ,
+
     }))
 
     const FirstBoxContainer = styled(Box)(({theme})=>({
         display : 'flex' ,  borderRadius : theme.spacing(1)  ,alignItems : 'center' , gap : theme.spacing(2) , justifyContent : 'space-between'  , border : '2px solid red' ,
         backgroundColor : theme.palette.secondary.dark ,
-        padding : theme.spacing(1) ,
+        padding : theme.spacing(5) ,
         borderRadius : theme.spacing(1) ,
         boxShadow : `2px 2px 4px ${theme.palette.secondary.dark}`
     }))
@@ -35,8 +35,8 @@ gap : theme.spacing(3) ,
         <FirstBoxContainer  flex={2}  >
             <Container >
             <Box style={{ gap  : 0 , display  : 'flex' , flexDirection : 'column' ,  }} >
-<StyledTitle variant='h3'  > Explore The World</StyledTitle>
-<StyledTitle variant='h4' > Sky is not the limit </StyledTitle>
+<StyledTitle variant='h4'  > Explore The World</StyledTitle>
+<StyledTitle variant='h5' > Sky is not the limit </StyledTitle>
             </Box>
             <StyledText>
             Visite and explore new cities arround 
@@ -48,7 +48,7 @@ new technologies
 and pick the best hotels     
             </StyledText>
             </Container>
-            <img src={earthPlan} style={{width : 200, border : '2px solid red' ,height : 200}} ></img>
+            <img src={earthPlan} style={{width : 150,height : 150}} ></img>
         </FirstBoxContainer>
     )
 }

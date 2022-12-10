@@ -6,7 +6,7 @@ import WbSunnyIcon from '@mui/icons-material/WbSunny';
 
 function Buttons() {
     return (
-        <Stack justifyContent='center' gap={5} sx={{width : '90%' ,  border :'2px solid red'}}  direction='row'  >
+        <Stack justifyContent='center' gap={5} sx={{width : '90%' }}  direction='row'  >
             <Button startIcon={<MapsHomeWorkIcon/>} variant='contained'  > Explore the weather </Button>
             <Button startIcon={<WbSunnyIcon/>} variant='outlined'  > Explore the hotels  </Button>
         </Stack>

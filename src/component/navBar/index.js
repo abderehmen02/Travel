@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box , Toolbar, Typography  , styled } from '@mui/material'
 import Logo from '../../Images/logoNavBar.png'
-
+import {Link} from 'react-router-dom'
 
 function NavBar() {
 const StyledToolBar = styled(Toolbar)({
@@ -34,10 +34,10 @@ const PagesLinks = styled(Box)({
  
             </LogoName>
             <PagesLinks>
-            <Typography variant='h4' > Home </Typography>
-            <Typography variant='h4' > Weather </Typography>
-            <Typography variant='h4' >Map </Typography>
-            <Typography variant='h4' >Hotels</Typography>
+    <Link style={{textDecoration : 'none'}} to='/home' ><Typography variant='h4'  > Home </Typography></Link>
+    <Link style={{textDecoration : 'none'}} to='/weather' ><Typography variant='h4'> Weather </Typography></Link>
+    <Link style={{textDecoration : 'none'}} to='/map' ><Typography variant='h4'>Map </Typography></Link>
+    <Link style={{textDecoration : 'none'}}  to='/hotels' ><Typography variant='h4'>Hotels</Typography></Link>
             </PagesLinks>
         </StyledToolBar>
     )

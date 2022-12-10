@@ -1,32 +1,61 @@
 import { Typography , styled , Box } from '@mui/material'
-import React from 'react'
+import React , {useState, useEffect} from 'react'
 import earthPlan from '../../svgs/earthPlan.svg'
-function ThirdBox() {
-    const StyledTitle = styled(Typography)(({theme})=>({
-color : theme.palette.white.main ,
-    }))
+import ImageOne from '../../Images/hotel0.jpg'
+import ImageTwo from '../../Images/hotel1.jpg'
+import ImageThree from '../../Images/hotel2.jpg'
+import ImageFore from '../../Images/hotel3.jpg'
+import  { motion} from 'framer-motion'
 
-    const StyledText = styled(Typography)(({theme})=>({
-        color : theme.palette.white.light , 
-        textAlign : 'center'
+
+const Images = [ImageOne , ImageTwo , ImageThree , ImageFore]
+function ThirdBox() {
+//// hooks
+const [Background, setBackground] = useState(Images[Math.floor(Math.random()*Images.length - 1)])
+
+
+
+useEffect(() => {
+const changeBackground =    setInterval(()=>{
+    setBackground(Images[Math.floor(Math.random()*Images.length - 1)])
+} , 10000)
+    return () => {
+        clearInterval(changeBackground)
+    }
+}, [])
+
+const StyledTitle = styled(Typography)(({theme})=>({
+color : theme.palette.white.main ,
+zIndex : 2
+}))
+
+
+const StyledText = styled(Typography)(({theme})=>({
+    color : theme.palette.white.main , 
+    textAlign : 'center' ,
+    zIndex : 2
     }))
 
     const Container = styled(Box)(({theme})=>({
- display : 'flex' , 
- flexDirection :'column' ,
- alignItems : 'center' ,
+display : 'flex' , 
+flexDirection :'column' ,
+alignItems : 'center' ,
 width : '50%',
+borderRadius : theme.spacing(1) ,
+boxShadow : `2px 2px 4px ${theme.palette.pink.main}` ,
+position : 'relative' ,
 gap : theme.spacing(3) ,
-
 flex : 1 ,
- border :'2px solid red' ,
- padding : theme.spacing(1)
+border : '2px solid black' ,
+ padding : theme.spacing(5)
     }))
     return (
             <Container >
-            <Box style={{ gap  : 0 , display  : 'flex' , flexDirection : 'column' ,  }} >
-<StyledTitle variant='h3'  > Explore The World</StyledTitle>
-<StyledTitle variant='h4' > Sky is not the limit </StyledTitle>
+            <div   style={{position : 'absolute' , backgroundSize : 'cover' , backgroundImage : `url(${Background})`, opacity : 0.9 , zIndex : 0 ,top : 0 , right :0 , width  : '100%' , height : '100%'}}>            </div>
+            <div style={{position : 'absolute'  , top : 0, right :0 , width : '100%' , height : '100%' , backgroundColor : 'black' , opacity :0.7 , zIndex : 1}} ></div>
+            <Box style={{ gap  : 0 , zIndex :2, display  : 'flex' , flexDirection : 'column'  }} >
+<StyledTitle variant='h4'  > Explore The World</StyledTitle>
+<StyledTitle variant='h5' > Sky is not the limit </StyledTitle>
             </Box>
             <StyledText>
             Visite and explore new cities arround 
