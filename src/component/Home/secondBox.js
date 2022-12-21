@@ -1,6 +1,6 @@
 import { Typography , styled , Box } from '@mui/material'
 import React from 'react'
-import earthPlan from '../../svgs/earthPlan.svg'
+
 function SecondBox() {
     const StyledTitle = styled(Typography)(({theme})=>({
 color : theme.palette.white.main ,

@@ -5,7 +5,6 @@ import ImageOne from '../../Images/hotel0.jpg'
 import ImageTwo from '../../Images/hotel1.jpg'
 import ImageThree from '../../Images/hotel2.jpg'
 import ImageFore from '../../Images/hotel3.jpg'
-import  { motion} from 'framer-motion'
 
 
 const Images = [ImageOne , ImageTwo , ImageThree , ImageFore]

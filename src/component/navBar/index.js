@@ -4,13 +4,13 @@ import Logo from '../../Images/logoNavBar.png'
 import {Link} from 'react-router-dom'
 
 function NavBar() {
-const StyledToolBar = styled(Toolbar)({
+const StyledToolBar = styled(Toolbar)(({theme})=>({
 width : '80vw' , 
 display : 'flex' , 
 margin : '8px' ,
 justifyContent : 'space-between' ,
 gap : '128px' ,
-})
+}))
 
 
 
@@ -31,7 +31,6 @@ const PagesLinks = styled(Box)({
             <LogoName>
             <img src={Logo} ></img>
             <Typography variant='h3' >TravelW</Typography>
- 
             </LogoName>
             <PagesLinks>
     <Link style={{textDecoration : 'none'}} to='/home' ><Typography variant='h4'  > Home </Typography></Link>
