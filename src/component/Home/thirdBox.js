@@ -39,7 +39,6 @@ const StyledText = styled(Typography)(({theme})=>({
 display : 'flex' , 
 flexDirection :'column' ,
 alignItems : 'center' ,
-width : '50%',
 borderRadius : theme.spacing(1) ,
 boxShadow : `2px 2px 4px ${theme.palette.pink.main}` ,
 position : 'relative' ,

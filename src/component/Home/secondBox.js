@@ -15,13 +15,12 @@ color : theme.palette.white.main ,
  display : 'flex' , 
  flexDirection :'column' ,
  alignItems : 'center' ,
-width : '50%',
 gap : theme.spacing(3) , 
  flex : 1 , 
  borderRadius : theme.spacing(1) ,
  boxShadow : `2px 2px 4px ${theme.palette.pink.main}` ,
  padding : theme.spacing(5) ,
- backgroundColor : theme.palette.pink.main
+ backgroundColor : theme.palette.pink.main 
     }))
     return (
             <Container >

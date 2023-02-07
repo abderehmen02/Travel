@@ -25,11 +25,15 @@ gap : theme.spacing(3) ,
     }))
 
     const FirstBoxContainer = styled(Box)(({theme})=>({
-        display : 'flex' ,  borderRadius : theme.spacing(1)  ,alignItems : 'center' , gap : theme.spacing(2) , justifyContent : 'space-between'  , border : '2px solid red' ,
+        display : 'flex' ,  borderRadius : theme.spacing(1)  ,alignItems : 'center' , gap : theme.spacing(2) , justifyContent : 'space-between'  ,
         backgroundColor : theme.palette.secondary.dark ,
+
         padding : theme.spacing(5) ,
         borderRadius : theme.spacing(1) ,
-        boxShadow : `2px 2px 4px ${theme.palette.secondary.dark}`
+        boxShadow : `2px 2px 4px ${theme.palette.secondary.dark}`   ,
+        [theme.breakpoints.down("md")] : {
+            flexDirection : 'column'
+        }
     }))
     return (
         <FirstBoxContainer  flex={2}  >
