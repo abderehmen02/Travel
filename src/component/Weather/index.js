@@ -10,6 +10,8 @@ import NoCityFound from './NoCityFound'
 import Header from './header';
 import InputAdornment from '@mui/material/InputAdornment';
 import LocationOnIcon from '@mui/icons-material/LocationOn';import CardSkeleton from './cardSkeleton'
+import Dots from '../Home/dots'
+
 
 
 function Weather() {
@@ -101,6 +103,7 @@ CityName === '' || CityNameWeather === false ? <NoCityFound/> :
 <Dialog open={Boolean(Details)} onClose={()=>{setDetails(false)}} >
 <DetailsComponent CityNameWeather={CityNameWeather } Details={Details} setDetails={setDetails}  />
 </Dialog>
+<Dots componentNumber={1} ></Dots>
         </WeatherContainer>)
 }
 
