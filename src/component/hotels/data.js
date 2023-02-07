@@ -106,6 +106,7 @@ import "dotenv"
 
 export const nearbyHotels = async (lat , long)=>{
   try{
+console.log("near by hotels")
 const options = {
   method: 'GET',
   url: 'https://booking-com.p.rapidapi.com/v1/hotels/nearby-cities',
@@ -117,6 +118,7 @@ const options = {
 };
 
 const res = await axios.request(options)
+console.log(res)
   return ({data : res.data})
   }
 catch (error){

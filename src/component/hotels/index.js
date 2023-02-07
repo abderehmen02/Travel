@@ -122,12 +122,14 @@ function getLocation() {
 async function getHotels(){
   dispatch({type: ActionTypes.LOADING})
   const {data , error} = await nearbyHotels(MapMarkerLat , MapMarkerLon) ;
+  console.log("data")
   console.log(data)
   if(data){
   dispatch({type: ActionTypes.ADD_HOTELS , Hotels: data}) ;
   }
   else if(error){
   dispatch({type : ActionTypes.ERROR})
+  console.log("error")
   console.log(error)
   }
 }
