@@ -53,17 +53,13 @@ border : '2px solid black' ,
             <div   style={{position : 'absolute' , backgroundSize : 'cover' , backgroundImage : `url(${Background})`, opacity : 0.9 , zIndex : 0 ,top : 0 , right :0 , width  : '100%' , height : '100%'}}>            </div>
             <div style={{position : 'absolute'  , top : 0, right :0 , width : '100%' , height : '100%' , backgroundColor : 'black' , opacity :0.7 , zIndex : 1}} ></div>
             <Box style={{ gap  : 0 , zIndex :2, display  : 'flex' , flexDirection : 'column'  }} >
-<StyledTitle variant='h4'  > Explore The World</StyledTitle>
-<StyledTitle variant='h5' > Sky is not the limit </StyledTitle>
+<StyledTitle variant='h4'  > Maps</StyledTitle>
             </Box>
             <StyledText>
-            Visite and explore new cities arround 
-the world is becoming easier ussing 
-new technologies ,
+            Explore the map and see diffrent places in diffrent countries ;
             </StyledText>
             <StyledText>
-            search the weather for your target city
-and pick the best hotels     
+            the map is availeble in any place at any time , if you don't have access to google map , this is a great ulternative
             </StyledText>
             </Container>
     )
