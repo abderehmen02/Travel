@@ -33,7 +33,7 @@ const PagesLinks = styled(Box)({
             <Typography variant='h3' >TravelW</Typography>
             </LogoName>
             <PagesLinks>
-    <Link style={{textDecoration : 'none'}} to='/home' ><Typography variant='h4'  > Home </Typography></Link>
+    <Link style={{textDecoration : 'none'}} to='/' ><Typography variant='h4'  > Home </Typography></Link>
     <Link style={{textDecoration : 'none'}} to='/weather' ><Typography variant='h4'> Weather </Typography></Link>
     <Link style={{textDecoration : 'none'}} to='/map' ><Typography variant='h4'>Map </Typography></Link>
             </PagesLinks>

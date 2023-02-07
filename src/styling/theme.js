@@ -94,7 +94,6 @@ const  theme   = createTheme({
             "&:hover"  : {
               color : '#652EFF' ,
               backgroundColor  :'#ffffff' ,
-             border : '2px solid #652EFF' 
             }
           },
         },

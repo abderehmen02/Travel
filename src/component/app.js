@@ -13,9 +13,9 @@ function App() {
     <Router>
         <Router>
             <Switch>
-            <Route path='/'   ><Home/></Route>
             <Route path='/weather' ><Weather/> </Route>
             <Route path='/map' ><Map/></Route> 
+            <Route path='/' exact   ><Home/></Route>
             </Switch>
         </Router>
     </Router>
